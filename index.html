@@ -27,7 +27,7 @@
 
   <!-- Scripts
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
   <script src="https://google-code-prettify.googlecode.com/svn/loader/run_prettify.js"></script>
   <link rel="stylesheet" href="css/github-prettify-theme.css">
   <script src="js/site.js"></script>
@@ -44,100 +44,93 @@
   <div class="container">
     <section class="header">
       <h1 class="title">InfinKnot Recycling</h1>
-      <h3>One line of description here.</h3>
+      <h3>One line of description here</h3>
       <div class="value-props row">
         <div class="four columns value-prop">
           <img class="value-img" src="images/environment2.svg"> <!--change to SVG-->
-          <p><br>First reason why you want to hire us:<br>We'll help you save the planet</p>
+          <p>First reason why you want to hire us:<br>We'll help you save the planet</p>
         </div>
         <div class="four columns value-prop">
           <img class="value-img" src="images/bubble2.svg">
-          <p><br>Second reason:<br>Look good in the public eye</p>
+          <p>Second reason:<br>Look good in the public eye</p>
         </div>
         <div class="four columns value-prop">
           <img class="value-img" src="images/truck2.svg">
-          <p><br>Third reason:<br>Save money for your business!</p>
+          <p>Third reason:<br>Save money for your business!</p>
         </div>
-
       </div>
     </section>
 
-    <!--<div class="navbar-spacer"></div>
+    <div class="navbar-spacer"></div>
     <nav class="navbar">
       <div class="container">
         <ul class="navbar-list">
-          <li class="navbar-item"><a class="navbar-link" href="#what">What We Do</a></li>
-          <li class="navbar-item"><a class="navbar-link" href="#how">How We Can Help</a></li>
-          <li class="navbar-item"><a class="navbar-link" href="#who">Who We Are</a></li>
-          <li class="navbar-item"><a class="navbar-link" href="#contact">Contact</a></li>
+          <div id="what_link"><li class="navbar-item"><a class="navbar-link" href="#what">What We Do</a></li></div>
+          <div id="how_link"><li class="navbar-item"><a class="navbar-link" href="#how">How We Can Help</a></li></div>
+          <div id="who_link"><li class="navbar-item"><a class="navbar-link" href="#who">Who We Are</a></li></div>
+          <div id="contact_link"><li class="navbar-item"><a class="navbar-link" href="#contact">Contact</a></li></div>
         </ul>
       </div>
-    </nav>-->
+    </nav>
 
 
-    <div class="value-props row">
+    <!--<div class="value-props row">
       <div class="four columns value-prop">
         <!--WHAT WE DO-->
-        <div class="container1" id="what">
+        <!--<div id="sticky-anchor"></div>
+        <div class="container1" id="what_button">
           <a class="button" href="#">What We Do</a>
-          <!--<h4><center>What We Do</center></h4>-->
         </div>
       </div>
 
       <div class="four columns value-prop">
         <!-- HOW CAN WE HELP-->
-        <div class="container1" id="how">
+        <!--<div class="container1" id="how_button">
           <a class="button" href="#">How We Can Help</a>
-          <!--<h4><center>How We Can Help</center></h4>-->
         </div>
       </div>
 
       <div class="four columns value-prop">
         <!--WHO WE ARE-->
-        <div class="container1" id="who">
+        <!--<div class="container1" id="who_button">
           <a class="button" href="#">Who We Are</a>
-          <!--<h4><center>Who We Are</center></h4>-->
-        </div>
+       </div>
       </div>
     </div>
 
 
     <!--CONTACT-->
-    <div class="contactContainer">
-      <a class="button" href="#">Contact</a>
-      <!--<h4><center>Contact</center></h4>-->
-    </div>
+    <!--<div class="contactContainer">
+      <a class="button" href="#" id="contact_button">Contact</a>
+    </div> -->
 
     <!-- What We Do -->
-    <div class="docs-section" id="what">
+    <div class="docs-section" id="what_des">
       <h6 class="docs-header">What We Do</h6>
-      <p>Lorem ipsum dolor sit amet, nullam debitis ne qui, utinam nullam eam et. Mei cu esse recteque, eam at velit solet corpora. Ne mea consul sapientem. No per causae admodum deleniti, has at alii insolens. Cum aeque quodsi ea, facilis vulputate pri ne.</p>
-      <p>Usu numquam sanctus dolorum id. Ne eirmod inermis intellegat est, qui et quis blandit posidonium, te clita feugiat est. Aliquid habemus ut mei, quem suas placerat vim an. Te cum suas possit albucius, et possit fastidii eam, reque voluptua per eu. Sed tale aperiam officiis an, cu ius omnis affert. Cu veniam expetenda adversarium has, utamur assentior mel ex.</p>
+      <p>Lorem ipsum dolor sit amet, nullam debitis ne qui, utinam nullam eam et. Mei cu esse recteque, eam at velit solet corpora. Ne mea consul sapientem. No per causae admodum deleniti, has at alii insolens. Cum aeque quodsi ea, facilis vulputate pri ne.Lorem ipsum dolor sit amet, nullam debitis ne qui, utinam nullam eam et. Mei cu esse recteque, eam at velit solet corpora. Ne mea consul sapientem. No per causae admodum deleniti, has at alii insolens. Cum aeque quodsi ea, facilis vulputate pri ne.</p>
     </div>
 
     <!-- How We Can Help -->
-    <div class="docs-section" id="how">
+    <div class="docs-section" id="how_des">
       <h6 class="docs-header">How We Can Help</h6>
-      <p>Usu numquam sanctus dolorum id. Ne eirmod inermis intellegat est, qui et quis blandit posidonium, te clita feugiat est. Aliquid habemus ut mei, quem suas placerat vim an. Te cum suas possit albucius, et possit fastidii eam, reque voluptua per eu. Sed tale aperiam officiis an, cu ius omnis affert. Cu veniam expetenda adversarium has, utamur assentior mel ex.</p>
-      <p>Lorem ipsum dolor sit amet, nullam debitis ne qui, utinam nullam eam et. Mei cu esse recteque, eam at velit solet corpora. Ne mea consul sapientem. No per causae admodum deleniti, has at alii insolens. Cum aeque quodsi ea, facilis vulputate pri ne.</p>
+      <p>Lorem ipsum dolor sit amet, nullam debitis ne qui, utinam nullam eam et. Mei cu esse recteque, eam at velit solet corpora. Ne mea consul sapientem. No per causae admodum deleniti, has at alii insolens. Cum aeque quodsi ea, facilis vulputate pri ne.Lorem ipsum dolor sit amet, nullam debitis ne qui, utinam nullam eam et. Mei cu esse recteque, eam at velit solet corpora. Ne mea consul sapientem. No per causae admodum deleniti, has at alii insolens. Cum aeque quodsi ea, facilis vulputate pri ne.</p>
     </div>
 
     <!-- Who We Are -->
-    <div class="docs-section" id="who">
+    <div class="docs-section" id="who_des">
       <h6 class="docs-header">Who We Are</h6>
-      <p>Lorem ipsum dolor sit amet, nullam debitis ne qui, utinam nullam eam et. Mei cu esse recteque, eam at velit solet corpora. Ne mea consul sapientem. No per causae admodum deleniti, has at alii insolens. Cum aeque quodsi ea, facilis vulputate pri ne.</p>
-      <p>Lorem ipsum dolor sit amet, nullam debitis ne qui, utinam nullam eam et. Mei cu esse recteque, eam at velit solet corpora. Ne mea consul sapientem. No per causae admodum deleniti, has at alii insolens. Cum aeque quodsi ea, facilis vulputate pri ne.</p>
-      <p>Lorem ipsum dolor sit amet, nullam debitis ne qui, utinam nullam eam et. Mei cu esse recteque, eam at velit solet corpora. Ne mea consul sapientem. No per causae admodum deleniti, has at alii insolens. Cum aeque quodsi ea, facilis vulputate pri ne.</p>
+      <p>Lorem ipsum dolor sit amet, nullam debitis ne qui, utinam nullam eam et. Mei cu esse recteque, eam at velit solet corpora. Ne mea consul sapientem. No per causae admodum deleniti, has at alii insolens. Cum aeque quodsi ea, facilis vulputate pri ne.Lorem ipsum dolor sit amet, nullam debitis ne qui, utinam nullam eam et. Mei cu esse recteque, eam at velit solet corpora. Ne mea consul sapientem. No per causae admodum deleniti, has at alii insolens. Cum aeque quodsi ea, facilis vulputate pri ne.</p>
+      <p>Lorem ipsum dolor sit amet, nullam debitis ne qui, utinam nullam eam et. Mei cu esse recteque, eam at velit solet corpora. Ne mea consul sapientem. No per causae admodum deleniti, has at alii insolens. Cum aeque quodsi ea, facilis vulputate pri ne.Lorem ipsum dolor sit amet, nullam debitis ne qui, utinam nullam eam et. Mei cu esse recteque, eam at velit solet corpora. Ne mea consul sapientem. No per causae admodum deleniti, has at alii insolens. Cum aeque quodsi ea, facilis vulputate pri ne.</p>
+      <p>Lorem ipsum dolor sit amet, nullam debitis ne qui, utinam nullam eam et. Mei cu esse recteque, eam at velit solet corpora. Ne mea consul sapientem. No per causae admodum deleniti, has at alii insolens. Cum aeque quodsi ea, facilis vulputate pri ne.Lorem ipsum dolor sit amet, nullam debitis ne qui, utinam nullam eam et. Mei cu esse recteque, eam at velit solet corpora. Ne mea consul sapientem. No per causae admodum deleniti, has at alii insolens. Cum aeque quodsi ea, facilis vulputate pri ne.</p>
     </div>
 
     <!-- Contact -->
-    <div class="docs-section" id="contact">
+    <div class="docs-section" id="contact_des">
       <h6 class="docs-header">Contact</h6>
       <p>Lorem ipsum dolor sit amet, nullam debitis ne qui, utinam nullam eam et. Mei cu esse recteque, eam at velit solet corpora. Ne mea consul sapientem. No per causae admodum deleniti, has at alii insolens. Cum aeque quodsi ea, facilis vulputate pri ne.</p>
     </div>
 
-
-
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
   </div>
 
 <!-- End Document

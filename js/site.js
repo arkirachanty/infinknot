@@ -1,21 +1,88 @@
 $(document).ready(function() {
 
+  /*function init() {
+    $(window).on('scroll', onScroll)
+    $(window).on('resize', resize)
+  }*/
+
   // Variables
   var $codeSnippets = $('.code-example-body'),
-      $nav = $('.navbar'),
-      $body = $('body'),
-      $window = $(window),
-      $popoverLink = $('[data-popover]'),
-      navOffsetTop = $nav.offset().top,
-      $document = $(document),
-      entityMap = {
-        "&": "&amp;",
-        "<": "&lt;",
-        ">": "&gt;",
-        '"': '&quot;',
-        "'": '&#39;',
-        "/": '&#x2F;'
-      }
+    $nav = $('.navbar'),
+    $body = $('body'),
+    $window = $(window),
+    $popoverLink = $('[data-popover]'),
+    navOffsetTop = $nav.offset().top,
+    $document = $(document),
+    entityMap = {
+      "&": "&amp;",
+      "<": "&lt;",
+      ">": "&gt;",
+      '"': '&quot;',
+      "'": '&#39;',
+      "/": '&#x2F;'
+    }
+
+  /*$("#what_button").click(function() {
+    $("#demo").html("Hello, World!");
+  });*/
+
+
+  /*CLICKING BUTTONS*/
+  /*$("#what_button").click(function() {
+    $('html, body').animate({
+        scrollTop: $("#what_des").offset().top
+    }, 2000);
+  });
+
+  $("#how_button").click(function() {
+    $('html, body').animate({
+        scrollTop: $("#how_des").offset().top
+    }, 2000);
+  });
+
+  $("#who_button").click(function() {
+    $('html, body').animate({
+        scrollTop: $("#who_des").offset().top
+    }, 2000);
+  });
+
+  $("#contact_button").click(function() {
+    $('html, body').animate({
+        scrollTop: $("#contact_des").offset().top
+    }, 2000);
+  });
+
+
+  //STICKY BUTTONS
+  /*function sticky_relocate() {
+  //function onScroll() {
+    var window_top = $(window).scrollTop();
+    var div_top = $('#sticky-anchor').offset().top;
+    if (window_top > div_top)
+      //$('#what_button').addClass('sticky');
+      $('#how_button').addClass('sticky');
+      //$('#who_button').addClass('sticky');
+      //$('#contact_button').addClass('sticky');
+    else
+      //$('#what_button').removeClass('sticky');
+      $('#how_button').removeClass('sticky');
+      //$('#who_button').removeClass('sticky');
+      //$('#contact_button').removeClass('sticky');
+  }
+
+  /*function resize() {
+    $('#what_button').removeClass('sticky')
+    var div_top = $('#sticky-anchor').offset().top;
+    onScroll()
+  }*/
+
+
+  /*$(function() {
+    $(window).scroll(sticky_relocate);
+    sticky_relocate();
+  }); */
+
+  //$("#demo").html("Hello, World!");
 
   function init() {
     $window.on('scroll', onScroll)
@@ -54,11 +121,26 @@ $(document).ready(function() {
     }
   }
 
-  $("#button").click(function() {
+  $("#what_link").click(function() {
     $('html, body').animate({
-        scrollTop: $("#elementtoScrollToID").offset().top
+        scrollTop: $("#what_des").offset().top - 65
     }, 2000);
-});
+  });
+  $("#how_link").click(function() {
+    $('html, body').animate({
+        scrollTop: $("#how_des").offset().top - 65
+    }, 2000);
+  });
+  $("#who_link").click(function() {
+    $('html, body').animate({
+        scrollTop: $("#who_des").offset().top - 65
+    }, 2000);
+  });
+  $("#contact_link").click(function() {
+    $('html, body').animate({
+        scrollTop: $("#contact_des").offset().top - 65
+    }, 2000);
+  });
 
   function resize() {
     $body.removeClass('has-docked-nav')
